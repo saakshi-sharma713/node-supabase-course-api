@@ -1,0 +1,4 @@
+GET - /courses/d1da1ec1-ed77-4002-9611-ef69883c3bc3/enrollments
+GET - /courses/d1da1ec1-ed77-4002-9611-ef69883c3bc3/enrollments
+POST - /enroll
+POST - /enroll

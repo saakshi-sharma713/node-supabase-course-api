@@ -2,8 +2,10 @@ import express from "express"
 import { checkStatus } from "./DBHealthCheck.js";
 import { CourseRouter } from "./Routes/course.route.js";
 import { EnrollRouter } from "./Routes/enrollment.route.js";
+import { logger } from "./Middleware/Logger.middleware.js";
 const app = express()
 const PORT=8080;
+app.use(logger)
 app.use(express.json())
 app.use("/courses",CourseRouter)
 app.use("/enroll",EnrollRouter)
